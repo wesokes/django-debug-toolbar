@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-debug-toolbar',
-    version='0.9.4',
+    version='0.9.4.2',
     description='A configurable set of panels that display various debug information about the current request/response.',
     long_description=open('README.rst').read(),
     # Get more strings from http://www.python.org/pypi?:action=list_classifiers
@@ -13,7 +13,7 @@ setup(
     license='BSD',
     packages=find_packages(exclude=('tests', 'example')),
     tests_require=[
-        'django>=1.3,<1.6',
+        'django>=1.3,<=1.6',
     ],
     test_suite='runtests.runtests',
     include_package_data=True,
